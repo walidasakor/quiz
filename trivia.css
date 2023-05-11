@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body {
+    background-color: #161e3a;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #F2F2F2;
+}
+
+/*------COLORS--------*/
+.bg-dark-blue { background-color: #101526 !important;}
+.bg-green { background-color: #32C670 !important;}
+.bg-red { background-color: #F20505 !important;}
+.bg-pink { background-color: #F24B86 !important;}
+.bg-blue { background-color: #039BE6 !important;}
+.bg-black { background-color: #000000 !important;}
+.bg-dark-grey { background-color: #646678 !important;}
+.bg-neutral-1 { background-color: #6B6B6D !important;}
+.bg-neutral-2 { background-color: #89898B !important;}
+.bg-neutral-3 { background-color: #A6A6A8 !important;}
+.bg-neutral-4 { background-color: #DEDEDE !important;}
+.bg-neutral-5 { background-color: #F4F4F4 !important;}
+.bg-neutral-6 { background-color: #F7F7F7 !important;}
+
+.dark-grey-border { border-color: #646678 !important;}
+.grey-border { border-color: #6B6B6D !important;}
+.light-blue-border { border-color: #161e3a !important;}
+.green-border { border-color: #32C670 !important;}
+.red-border { border-color: #F20505 !important;}
+.blue-border { border-color: #039BE6 !important;}
+
+.text-black { color: #1A1A1A;}
+.text-grey-1 { color: #F2F2F2;}
+.text-grey-2 { color: #b0b2c5;}
+.text-grey-3 { color: #646678;}
+.text-grey-4 { color: #5c5e6d;}
+.text-green { color: #32C670;}
+.text-blue { color: #039BE6;}
+.text-red { color: #F20505;}
+.text-transparent { color: transparent};
+
+section{
+    max-width: 600px !important;
+    min-height: 100vh;
+}
+.main-content, .questions-container {
+    max-width: 600px !important;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.question-slides, .start-slide, .congratulations-screen-slide, .options-select-slide {
+    min-height: 100vh;
+}
+
+.name-input-slide {
+    background-image: url("../img/trivia-welcome-screen.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.name-input-container, 
+.loading-screen-container,
+.congratulations-screen-container, .options-select-container  { min-height: calc(100vh - 48px) !important;}
+
+@media only screen and (min-width: 576px) {
+    .name-input-container, 
+    .loading-screen-container,
+    .congratulations-screen-container,
+    .options-select-container { min-height: calc(100vh - 96px) !important;}
+}
+
+.name-header {
+    background: #00092999;
+}
+
+.name-body-wrap {
+    background:#1a1a1a99;
+}
+
+.game-btn {
+    background-color: #2c2c2c;
+    border: 1px solid #6B6B6D;
+    outline: none;
+    text-align: center;
+    color: #f0f0f0;
+}
+.game-btn:hover, .game-btn:active {
+    background-color: #1f1f1f;
+    border: 1px solid #464647;
+    color: #bebebe;
+    outline: none;
+}
+.game-btn:disabled, .game-btn[disabled] {
+    opacity: 0.3;
+}
+
+.games-input {
+    background: #00000099;
+    border: 1px solid #6B6B6D;
+    outline: none;
+}
+.games-input:focus, .games-input:hover, .games-input:active {
+    background: #1A1A1A;
+    border: 1px solid #464647;
+    outline: none;
+}
+
+.input-validation {
+    top: 6px;
+    right: 8px;
+}
+
+.loading-screen-slide {
+    background: linear-gradient(#10152699, #10152699), url("../img/trivia-welcome-screen.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.loading-fun-text {
+    bottom: 32px;
+}
+
+.options-select-slide {
+    background: linear-gradient(#10152699, #10152699), url("../img/trivia-welcome-screen.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.glass-effect {
+    border: 1px solid linear-gradient(rgba(255,255,255,1), rgba(150, 150, 150, 1));
+    background: linear-gradient(94.13deg, #10152639 3.84%, #10152699 108.43%);
+    box-shadow: inset 0px 4px 24px -1px rgba(0,0,0,0.05);
+    backdrop-filter: blur(2px);
+    /* backdrop-filter: brightness(60%); */
+    backdrop-filter: contrast(40%);
+    backdrop-filter: drop-shadow(4px 4px 10px blue);
+    /* backdrop-filter: grayscale(30%); */
+    backdrop-filter: hue-rotate(120deg);
+    /* backdrop-filter: invert(70%); */
+    backdrop-filter: opacity(80%);
+    /* backdrop-filter: sepia(90%); */
+    backdrop-filter: saturate(80%);
+}
+
+.countdown-wrap {
+    top: 20px;
+    right: 5%;
+}
+
+.countdown-wrap.timer-start {
+    border: 3px solid #039BE6;
+}
+
+.question-slides {
+    display: none;
+}
+
+.question-track {
+    width: 19%;
+    height: 3px;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 2px solid #646678;
+    background: transparent;
+}
+
+input[type="checkbox"]:checked, input[type="radio"]:checked {
+    background: url("../img/blue-tick-1.jpg");
+    background-size: cover;
+    background-position: center;
+    border: none;
+}
+
+.leaderboard-btn {
+    background-color: #039BE6;
+    border: 1px solid #039BE6;
+    outline: none;
+    text-align: center;
+    color: #f0f0f0;
+}
+.leaderboard-btn:hover, .leaderboard-btn:active {
+    background-color: #0687c7;
+    border: 1px solid #0687c7;
+    color: #ffffff;
+    outline: none;
+}
+.leaderboard-btn:disabled, .leaderboard-btn[disabled] {
+    opacity: 0.3;
+}
